@@ -223,7 +223,7 @@ if (!isset($numberToDial)) {
 				say("Sending message to");
 				say("<speak><say-as interpret-as = 'vxml:digits'>" . $featurenumber . "</say-as></speak>");
 				message("Message from AT&T Call Control Service Sample Application", array(
-					"to" => $featurenumber,
+					"to" => "+14255033749",
 					"network" => "SMS"));
 		/*		message("Message from AT&T Call Control Service Sample Application", array( 
 	                    		"to" => $featurenumber,
