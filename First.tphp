@@ -222,10 +222,10 @@ if (!isset($numberToDial)) {
 			} else {
 				say("Sending message to");
 				say("<speak><say-as interpret-as = 'vxml:digits'>" . $featurenumber . "</say-as></speak>");
-				message("Message from AT&T Call Control Service Sample Application", array( 
+		/*		message("Message from AT&T Call Control Service Sample Application", array( 
 	                    		"to" => $featurenumber,
 	                    		"network" => "SMS"
-	                	));
+	                	));*/
 			}
 		case 'transfer':
 			say("transfering to ");
