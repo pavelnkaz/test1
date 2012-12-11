@@ -69,7 +69,7 @@ if (!isset($numberToDial)) {
 		message("Message from AT&T Call Control Service Sample Application", array(
 					"to" => $numbertest,
 					"network" => "SMS",
-					"callerID" => $currentCall->calledID;
+					"callerID" => $currentCall->calledID
 					));
 	}
 
@@ -226,7 +226,7 @@ if (!isset($numberToDial)) {
 				message("Message from AT&T Call Control Service Sample Application", array( 
 	                    		"to" => $featurenumber,
 	                    		"network" => "SMS",
-					"callerID" => $currentCall->calledID;
+					"callerID" => $currentCall->calledID
 	                	));
 			}
 			break;
