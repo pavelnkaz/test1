@@ -179,6 +179,8 @@ if (!isset($numberToDial)) {
 	call($numberToDial);
 	say("Welcome to the A T and T. Call Management Services Sample Application.");
 	switch($feature) {
+	say ("id is");
+	say($smscid);
 		case 'ask':
 			$result9 = ask("Press four or five digits and Press pound when finished", array(
 						"choices" => "[4-5 DIGITS]",
