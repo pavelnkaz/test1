@@ -178,8 +178,6 @@ if (!isset($numberToDial)) {
 } else {
 	call($numberToDial);
 	say("Welcome to the A T and T. Call Management Services Sample Application.");
-	say("smsid");
-	say($smscid);
 	switch($feature) {
 		case 'ask':
 			$result9 = ask("Press four or five digits and Press pound when finished", array(
@@ -230,7 +228,7 @@ if (!isset($numberToDial)) {
 				message("Message from AT&T Call Control Service Sample Application", array( 
 	                    		"to" => $featurenumber,
 	                    		"network" => "SMS",
-					"callerID" => $currentCall->calledID
+					"callerID" => $smsCallerID 
 	                	));
 			}
 			break;
