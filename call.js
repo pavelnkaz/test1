@@ -78,7 +78,7 @@ if (typeof numberToDial === 'undefined')
         message("Message from AT&T Call Control Service Sample Application", {
             to: numbertest,
             network: "SMS",
-	    callerID => currentCall.calledID
+	    callerID: currentCall.calledID
         });
     }
 
